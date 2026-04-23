@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <title>Portfolio - Gibran</title>
+    
+    <style>
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        .navbar {
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .carousel-container {
+            max-width: 800px;
+            margin: 100px auto 20px auto;
+        }
+        .carousel-item img {
+            height: 350px;
+        }
+
+        .embed-responsive-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100% !important;
+            max-width: 100%;
+        }
+
+        .portfolio .card:hover {
+            transform: translateY(-5px);
+        }
+
+        section { padding: 60px 0; }
+
+        
+
+        /* mobile */
+        @media (max-width: 576px) {
+            .carousel-item img {
+                height: 250px;
+            }
+            section { padding: 40px 0; }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#home">Gibran Adi Pratama</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Carousel start -->
+    <div class="container carousel-container" id="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner shadow-lg border" style="border-radius: 15px;">
+                <div class="carousel-item active" style="padding: 30px;">
+                    <img src="/image/K1.jpg" class="d-block w-100" style="object-fit: cover;" alt="Slide 1">
+                </div>
+                <div class="carousel-item" style="padding: 30px;">
+                    <img src="/image/K6.jpg" class="d-block w-100" style=" object-fit: cover;" alt="Slide 2">
+                </div>
+                <div class="carousel-item" style="padding: 30px;">
+                    <img src="/image/P2.jpg" class="d-block w-100" style="object-fit: fill;" alt="Slide 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel end -->
+    <!-- About Section start -->
+    <section id="about">
+        <div class="container text-center">
+            <h2 class="mb-4 font-weight-bold">About Me</h2>
+            <div class="row">
+                <div class="col-md-6"><p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quis inventore quae non quisquam molestiae minima provident dolorum odio natus qui ut, fuga, voluptates hic error quia quaerat quos repellendus.</p></div>
+                <div class="col-md-6"><p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia itaque dicta quod laborum deserunt pariatur voluptates eum assumenda blanditiis dolores? Vitae nulla dolorem dolorum, fuga quibusdam odit quaerat dicta alias.</p></div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+    <!-- Portfolio Section start -->
+    <section id="portfolio" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 font-weight-bold">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/K6.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Lenovo i7">
+                        <div class="card-body">
+                            <h6 class="text-center">Lenovo i7</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary ">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card " style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s">
+                        <img src="/image/K8.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Asus ROG">
+                        <div class="card-body">
+                            <h6 class="text-center">Asus ROG</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/K3.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="HP Pavilion">
+                        <div class="card-body">
+                            <h6 class="text-center">HP Pavilion</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/K7.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Dell XPS">
+                        <div class="card-body">
+                            <h6 class="text-center">Dell XPS</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/M1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Razer">
+                        <div class="card-body">
+                            <h6 class="text-center">Razer</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/M2.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Logitech G">
+                        <div class="card-body">
+                            <h6 class="text-center">Logitech G</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/M3.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Fantech">
+                        <div class="card-body">
+                            <h6 class="text-center">Fantech</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/M4.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="VortexSeries Inno X3 Pro">
+                        <div class="card-body">
+                            <h6 class="text-center">VortexSeries Inno X3 Pro</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/P1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Canon">
+                        <div class="card-body">
+                            <h6 class="text-center">Canon</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/P2.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Epson">
+                        <div class="card-body">
+                            <h6 class="text-center">Epson</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/P3.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="HP">
+                        <div class="card-body">
+                            <h6 class="text-center">HP</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 10px; border: 0; border-radius: 10px; transition: transform 0.3s;">
+                        <img src="/image/P6.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Brother">
+                        <div class="card-body">
+                            <h6 class="text-center">Brother</h6>
+                            <p style="height: 60px;">Lorem ipsum, dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Cek</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section end -->
+     
+    <!-- contact section start -->
+    <section id="contact" class="contact mt-5">
+        <div class="container">
+            <!-- judul -->
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h2 class="font-weight-bold">Contact Me</h2>
+                </div>
+            </div>
+            <!-- location start -->
+            <div class="row">
+                <div class="col-lg-5 mx-auto bg-light p-4 mb-4" style="border-radius:10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 class="font-weight-bold text-center pb-3">Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310259.04482825927!2d109.80404456358234!3d-6.956633301821618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70236689acfe3d%3A0xfdfab4747c390277!2sPasekaran%2C%20Batang%2C%20Batang%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1776740083412!5m2!1sen!2sid" width="400" height="300" style="border-radius:10px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <!-- location end -->
+            <!-- form start -->
+                <div class="col-lg-5 mx-auto bg-light p-4" style="border-radius:10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 class="font-weight-bold text-center pb-3">Send Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- form end -->
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- youtube section start -->
+    <section id="education" class="education mt-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-5 ">
+                    <h2 class="font-weight-bold">Education</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex p-3 justify-content-center">
+                    <iframe style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" width="560" height="315" src="https://www.youtube.com/embed/yOIO5h3ENIw?si=SVCfKOuXK1g77Zpa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 d-flex p-3 justify-content-center">
+                    <iframe style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" width="560" height="315" src="https://www.youtube.com/embed/SDROba_M42g?si=avEm4IO_QPsGUDIM&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- youtube section end -->
+    <!-- footer start -->
+    <footer class="bg-dark text-white text-center py-3">
+        <small>©2026 Gibran Adi Pratama | All Rights Reserved</small>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
